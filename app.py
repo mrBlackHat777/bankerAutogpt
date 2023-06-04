@@ -1,5 +1,9 @@
 
 import os
+#load api from env file  using dot env
+from dotenv import load_dotenv
+load_dotenv()
+
 # Import OpenAI as main LLM service
 from langchain.llms import OpenAI
 
@@ -16,10 +20,6 @@ from langchain.agents.agent_toolkits import (
     VectorStoreToolkit,
     VectorStoreInfo
 )
-
-# Set APIkey for OpenAI Service
-
-os.environ['OPENAI_API_KEY'] = ''
 
 # Create instance of OpenAI LLM
 llm = OpenAI(temperature=0.1, verbose=True)

@@ -12,8 +12,9 @@ This project demonstrates the utilization of a ChromaDB vector store in a Langch
 4. Go into the directory `cd LangchainDocuments`
 5. Install the required dependencies `pip install -r requirements.txt`
    - Linux:`Remove pywin32 from requirements.txt`
-6. Add your OpenAI APIKey to line 22 of `app.py`
-7. Start the app `streamlit run app.py`  
+6. Copy the env template`cp .env.template .env`
+7. Add your OpenAI APIKey to the `env` file
+8. Start the app `streamlit run app.py`  
 
 
 # Other References 🔗
